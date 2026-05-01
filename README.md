@@ -34,52 +34,52 @@ Microsoft Entra ID (Azure AD)
 Azure AD Connect Syn
 ## Step-by-Step Deployment Guide
 ### Step1: Setup Domain Controller
-1: Install Windows Server 2022
-2: Set Static IP address
-3: Install role: 
-    >: Active Directory Domain Services (AD DS)
-4: Promote server to DOmain Controller
-    >: Create new forest (fatimazahrauzmasami.pk)
-5: Install and configure DNS Server
+ Install Windows Server 2022
+ Set Static IP address
+ Install role: 
+    : Active Directory Domain Services (AD DS)
+ Promote server to DOmain Controller
+    : Create new forest (fatimazahrauzmasami.pk)
+ Install and configure DNS Server
 ### Step2: Create Active Directory Structure
-1: Open Active Directory Users and Computers (ADUC)
-2: Create:
-   >: Organization Unite (OUs)
-   >: Users
-   >: Computers
-   >: Groups
-3: Create test user accounts
+ Open Active Directory Users and Computers (ADUC)
+ Create:
+   : Organization Unite (OUs)
+   : Users
+   : Computers
+   : Groups
+ Create test user accounts
 ### Step3: Configure Client Machine
-1: Install Windows 10 Pro
-2: Set DNS to Domain Controller IP
-3: Join system to domain:
-   >: System Properties --> Computer Name --> Domain
-4: Restart Machine
-5: Login using Domain Credentials
+ Install Windows 10 Pro
+ Set DNS to Domain Controller IP
+ Join system to domain:
+   : System Properties --> Computer Name --> Domain
+ Restart Machine
+ Login using Domain Credentials
 ### Step 4: Configure Group Policies (GPOs)
-1: Open Group Policy Management Concole
-2: Create new GPO 
-3: Link to OU
-4: Configure policies such as:
-   >: Password policy
-   >: Account lockout policy
-   >: Disable Control Panel
-   >: Desktop restrictions
+ Open Group Policy Management Concole
+ Create new GPO 
+ Link to OU
+ Configure policies such as:
+   : Password policy
+   : Account lockout policy
+   : Disable Control Panel
+   : Desktop restrictions
 
-5: Apply Policy:
+ Apply Policy:
     gpupdate /force
 ### Step 5: Azure AD Integration
-1: Install Azure AD Connect
-2: Sign in with Azure admin account
-3: Select: 
-     >: Password Hash Synchronization
-4: Connect:
-     >: On-prem Active Directory --> Azure AD
-5: Start synchronization
+ Install Azure AD Connect
+ Sign in with Azure admin account
+ Select: 
+     : Password Hash Synchronization
+ Connect:
+     : On-prem Active Directory --> Azure AD
+ Start synchronization
 Verify in Microsoft Entra Admin Center
 ### Step 6: Verify Sync
-   >: Check users appear in Azure AD
-   >: Confirm sync status is "Healthy"
+   : Check users appear in Azure AD
+   : Confirm sync status is "Healthy"
 # Author
 # Uzma Shabbir
 
