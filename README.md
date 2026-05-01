@@ -65,7 +65,8 @@ Azure AD Connect Syn
    >: Account lockout policy
    >: Disable Control Panel
    >: Desktop restrictions
-5: Appli Policy:
+
+5: Apply Policy:
     gpupdate /force
 ### Step 5: Azure AD Integration
 1: Install Azure AD Connect
