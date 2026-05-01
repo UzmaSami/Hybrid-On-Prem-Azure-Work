@@ -134,6 +134,8 @@ Verify in Microsoft Entra Admin Center
    : Check users appear in Azure AD
    
    : Confirm sync status is "Healthy"
+
+   :Enable MFA
    
 # Author
 # Uzma Shabbir
