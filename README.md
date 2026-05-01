@@ -1,9 +1,9 @@
 # Hybrid-On-Prem-Azure-Work
 # Active Directory Domain Controller with GPO and Azure AD Sync Project
 ## Project Overview
-This Project demonstrates the deployment of a Windows Server Active Directory environment including:
-Configuration of a Domain Controller
-Joining a client machine to the domain
+#### This Project demonstrates the deployment of a Windows Server Active Directory environment including:
+#### Configuration of a Domain Controller
+#### Joining a client machine to the domain
 Implementation of Group Policy Objects (GPOs)
 Integration with Microsoft Entra ID (Azure Active Directory) using Azure Ad Connect
 
